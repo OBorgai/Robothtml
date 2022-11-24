@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.10.7 on win32)" generated="20221123 19:20:05.721" rpa="false" schemaversion="3">
+<suite id="s1" name="Lien" source="c:\Users\Dell\Desktop\robotframeworkprojet03\lien.robot">
+<test id="s1-t1" name="Tester llien de la page" line="5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.selenium.dev/selenium/docs/api/java/index.html?overview-summary.html</arg>
+<arg>gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221123 19:20:05.944" level="INFO">Opening browser 'gc' to base url 'https://www.selenium.dev/selenium/docs/api/java/index.html?overview-summary.html'.</msg>
+<status status="PASS" starttime="20221123 19:20:05.943" endtime="20221123 19:20:07.396"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221123 19:20:07.397" endtime="20221123 19:20:07.523"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221123 19:20:10.536" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221123 19:20:07.523" endtime="20221123 19:20:10.536"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>name:packageListFrame</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20221123 19:20:10.537" level="INFO">Selecting frame 'name:packageListFrame'.</msg>
+<status status="PASS" starttime="20221123 19:20:10.537" endtime="20221123 19:20:10.562"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>org.openqa.selenium</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221123 19:20:10.563" level="INFO">Clicking link 'org.openqa.selenium'.</msg>
+<status status="PASS" starttime="20221123 19:20:10.563" endtime="20221123 19:20:10.635"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20221123 19:20:10.636" endtime="20221123 19:20:10.638"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221123 19:20:13.646" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221123 19:20:10.638" endtime="20221123 19:20:13.646"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>name:packageFrame</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20221123 19:20:13.647" level="INFO">Selecting frame 'name:packageFrame'.</msg>
+<status status="PASS" starttime="20221123 19:20:13.647" endtime="20221123 19:20:13.673"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>WebDriver</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221123 19:20:13.674" level="INFO">Clicking link 'WebDriver'.</msg>
+<status status="PASS" starttime="20221123 19:20:13.674" endtime="20221123 19:20:13.747"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20221123 19:20:13.748" endtime="20221123 19:20:13.751"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221123 19:20:16.754" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221123 19:20:13.752" endtime="20221123 19:20:16.755"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>name:classFrame</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20221123 19:20:16.757" level="INFO">Selecting frame 'name:classFrame'.</msg>
+<status status="PASS" starttime="20221123 19:20:16.756" endtime="20221123 19:20:16.790"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Help</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221123 19:20:16.791" level="INFO">Clicking link 'Help'.</msg>
+<status status="PASS" starttime="20221123 19:20:16.791" endtime="20221123 19:20:16.960"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20221123 19:20:16.961" endtime="20221123 19:20:16.970"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221123 19:20:19.984" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221123 19:20:16.971" endtime="20221123 19:20:19.984"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221123 19:20:19.984" endtime="20221123 19:20:22.102"/>
+</kw>
+<status status="PASS" starttime="20221123 19:20:05.943" endtime="20221123 19:20:22.104"/>
+</test>
+<status status="PASS" starttime="20221123 19:20:05.727" endtime="20221123 19:20:22.109"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Lien">Lien</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
