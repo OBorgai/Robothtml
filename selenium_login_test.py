@@ -1,4 +1,15 @@
-"""Robust Selenium login test with Chrome/Edge support."""
+"""Robust Selenium login test with Chrome/Edge support.
+
+Quick start:
+1) Create a virtualenv and install dependencies:
+   - python -m venv .venv
+   - source .venv/bin/activate  (Windows: .venv\\Scripts\\activate)
+   - pip install selenium
+2) Ensure Chrome or Edge + matching driver are installed and on PATH.
+3) Run the test:
+   - python selenium_login_test.py --browser chrome
+   - python selenium_login_test.py --browser edge
+"""
 
 # -*- coding: utf-8 -*-
 # Import Python logging to emit structured logs

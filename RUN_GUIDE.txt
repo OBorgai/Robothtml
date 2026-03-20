@@ -1,0 +1,23 @@
+Guide rapide pour exécuter le test Selenium
+
+1) Préparer un environnement Python
+   - Python 3.10+ recommandé
+   - Créer un environnement virtuel :
+     - python -m venv .venv
+     - source .venv/bin/activate  (Windows: .venv\Scripts\activate)
+
+2) Installer les dépendances
+   - pip install selenium
+
+3) Installer le navigateur + driver
+   - Chrome : installer Google Chrome + ChromeDriver compatible
+   - Edge : installer Microsoft Edge + EdgeDriver compatible
+   - Ajouter le driver au PATH (ou le placer dans le dossier du projet)
+
+4) Exécuter le test
+   - Chrome : python selenium_login_test.py --browser chrome
+   - Edge   : python selenium_login_test.py --browser edge
+
+5) En cas d'echec
+   - Un screenshot est sauvegardé : selenium-login-failure.png
+   - Consulter les logs affichés dans le terminal
