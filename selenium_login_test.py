@@ -3,6 +3,8 @@
 # -*- coding: utf-8 -*-
 # Import Python logging to emit structured logs
 import logging
+# Import argparse to read CLI options
+import argparse
 # Import typing helpers for clearer signatures
 from typing import Iterable, Tuple
 # Import the WebDriver module to control the browser
@@ -196,6 +198,25 @@ def run_login_test(browser: str = "chrome") -> None:
             driver.quit()
 
 
+def parse_arguments() -> argparse.Namespace:
+    """Parse command-line arguments for the test."""
+    # Create the argument parser
+    parser = argparse.ArgumentParser(
+        description="Run the Selenium login test with Chrome or Edge.",
+    )
+    # Add a browser option with a safe default
+    parser.add_argument(
+        "--browser",
+        default="chrome",
+        choices=("chrome", "edge"),
+        help="Choose the browser driver (chrome or edge).",
+    )
+    # Return the parsed arguments
+    return parser.parse_args()
+
+
 if __name__ == "__main__":
-    # Run the test in Chrome by default
-    run_login_test(browser="chrome")
+    # Parse CLI arguments for browser selection
+    args = parse_arguments()
+    # Run the test with the selected browser
+    run_login_test(browser=args.browser)
